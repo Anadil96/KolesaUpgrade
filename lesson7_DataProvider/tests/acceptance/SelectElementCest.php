@@ -4,11 +4,13 @@ use Codeception\Example;
 use Page\Acceptance\SearchPage;
 
 /**
+ * класс для выбора элементов меню
  * @group test
  */
 class SelectElementCest
 {
     /**
+     * функция для выбора категории в меню
      * @param Example $data
      * @dataProvider getElementsForClick
      */
@@ -22,6 +24,9 @@ class SelectElementCest
         //var_dump($data['header']);*/
     }
 
+    /**
+     * функция для рандомного выбора 2 категорий
+     */
     protected function getElementsForClick()
     {
     $input = array(
