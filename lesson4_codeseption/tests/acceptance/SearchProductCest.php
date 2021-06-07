@@ -7,6 +7,15 @@ class SearchProductCest
      */
     public function checkSearchProduct(AcceptanceTester $I)
     {
+        $SearchBlouseCSS1 = '#homefeatured>li:nth-child(2) img[alt="Blouse"]';
+        $SearchBlouseXPath1 = '//ul[@id="homefeatured"]/li[2]';
+        $SearchBlouseCSS2 = '#homefeatured > li:nth-child(2) > div > div.left-block > div';
+        $SearchBlouseXPath2 = '//ul[@id="homefeatured"]/li[2]/div[//img[contains(@alt,"Blouse")]]';
+        $SearchButtonCSS = '#homefeatured > li:nth-child(2) > div > div.left-block > div > a.quick-view'; 
+        $SearchButtonXPath = '//*[@id="homefeatured"]/li[2]/div/div[1]/div/a[2]'; 
+        $ModalWindowCSS =  '.fancybox-iframe';
+        $ModalWindowXPath =  '//*[@class="fancybox-iframe"]';
+
         $I->amOnPage('');
         $I->seeElement('#homefeatured > li:nth-child(2) > div > div.left-block > div');
         $I->moveMouseOver('#homefeatured > li:nth-child(2) > div > div.left-block > div');
