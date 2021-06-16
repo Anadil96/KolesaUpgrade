@@ -22,7 +22,9 @@ jobs:
       - name: Install dependencies45
         run: composer require mongodb/mongodb
       - name: Install dependencies45
-        run: composer require codeception/module-rest --dev  
+        run: composer require codeception/module-rest --dev
+      - name: Install dependencies45
+        run: composer require codeception/module-phpbrowser --dev   
       - name: Run chromedriver
         run: nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub /dev/null 2>&1 &
       - name: Run test
