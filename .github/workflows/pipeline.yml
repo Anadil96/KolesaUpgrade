@@ -11,6 +11,8 @@ jobs:
           php-version: '7.4'
       - name: Install dependencies
         run: composer install
+      - name: Install dependencies2
+        run: php vendor/bin/codecept bootstrap
       - name: Install Faker
         run: composer require fzaninotto/Faker
       - name: Run chromedriver
