@@ -3,7 +3,7 @@
 use Page\Acceptance\mainPage;
 use Step\Acceptance\AllStep;
 
-class User1Cest
+class UsersCest
 {
     
     /**
