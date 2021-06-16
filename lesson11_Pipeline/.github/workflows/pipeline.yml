@@ -17,7 +17,7 @@ jobs:
         run: nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub /dev/null 2>&1 &
       - name: Run test
         run: php vendor/bin/codecept run --steps -vvv --xml
-      - name: JUnit Report Action
+      - name: JUnit Report Action 
         if: always()
         uses: mikepenz/action-junit-report@v2.4.2
         with:
