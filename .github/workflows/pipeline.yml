@@ -28,7 +28,7 @@ jobs:
       - name: Run chromedriver
         run: nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub /dev/null 2>&1 &
       - name: Run test
-      - name: Run chromedriver2
+      - name: Run chromedriver23
         run: |
           export DISPLAY=:99
           chromedriver --headless --no-sandbox --disable-dev-shm-usage --url-base=/wd/hub &
