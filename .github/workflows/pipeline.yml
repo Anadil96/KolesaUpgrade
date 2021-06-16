@@ -13,17 +13,17 @@ jobs:
         run: composer install
       - name: Install Faker
         run: composer require fzaninotto/Faker
-      - name: Install dependencies2
+      - name: Install webDriver
         run: composer require codeception/module-webdriver --dev
-      - name: Install dependencies3
+      - name: Install Asserts
         run: composer require codeception/module-asserts --dev
-      - name: Install dependencies44
+      - name: Install Mongodb
         run: composer require codeception/module-mongodb --dev
-      - name: Install dependencies45
+      - name: Require mongodb
         run: composer require mongodb/mongodb
-      - name: Install dependencies45
+      - name: Install REST module
         run: composer require codeception/module-rest --dev
-      - name: Install dependencies45
+      - name: Install phpBrowser
         run: composer require codeception/module-phpbrowser --dev   
       - name: Run chromedriver
         run: |
