@@ -13,6 +13,8 @@ jobs:
         run: composer install
       - name: Install Faker
         run: composer require fzaninotto/Faker
+      - name: Install dependencies
+        run: composer require codeception/module-webdriver --dev
       - name: Run chromedriver
         run: nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub /dev/null 2>&1 &
       - name: Run test
