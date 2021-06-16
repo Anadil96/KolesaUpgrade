@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies45
         run: composer require codeception/module-phpbrowser --dev   
       - name: Run chromedriver
-        run: nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub /dev/null 2>&1 &
+        run: nohup $CHROMEWEBDRIVER/chromedriver --url-base=wd/hub /dev/null 2>&1 &
       - name: Run chromedriver
         run: |
           export DISPLAY=:99
