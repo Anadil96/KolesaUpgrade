@@ -5,7 +5,7 @@ use Faker\Factory;
 /**
  * Класс для проверки создания, изменения и удаления пользователя
  */
-class UserCest
+class UsersCest
 {
 
     public static $defaultSchema = [
