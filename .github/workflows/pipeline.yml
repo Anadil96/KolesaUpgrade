@@ -17,8 +17,10 @@ jobs:
         run: composer require codeception/module-webdriver --dev
       - name: Install dependencies3
         run: composer require codeception/module-asserts --dev
-      - name: Install dependencies4
+      - name: Install dependencies44
         run: composer require codeception/module-mongodb --dev
+      - name: Install dependencies45
+        run: composer require mongodb/mongodb
       - name: Run chromedriver
         run: nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub /dev/null 2>&1 &
       - name: Run test
