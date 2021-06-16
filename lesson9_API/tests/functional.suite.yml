@@ -18,4 +18,4 @@ modules:
            url: 'http://api.izze.xyz/test/'
            headers:
                Content-Type: application/json
-    step_decorators: ~        
+step_decorators: ~        
