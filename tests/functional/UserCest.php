@@ -40,7 +40,7 @@ class UserCest
         $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPost('human', $UserDate);
         $I->seeResponseCodeIsSuccessful();
-        $I->seeResponseContainsJson(['status' => 'okk']);
+        $I->seeResponseContainsJson(['status' => 'ok']);
         $I->sendGet('people', $UserDate);
         $I->seeResponseMatchesJsonType(self::$defaultSchema);
     }
